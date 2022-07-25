@@ -138,10 +138,18 @@ body {
 
 .button-link {
     color: lightpink;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.button-link:hover {
+    font-size: 1.5rem;
+    color: deeppink;
+ 
 }
 
 .primary-img {
