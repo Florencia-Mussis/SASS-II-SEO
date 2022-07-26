@@ -570,8 +570,7 @@ body {
 }
 
 .suscription-link:hover {
-font-size: 1.4rem;
-color: deeppink;
+    color: deeppink;
 }
 
 
@@ -833,8 +832,7 @@ color: deeppink;
 }
 
 .submit:hover {
-font-size: 1.2rem;
-color: deeppink;
+    color: deeppink;
 }
 
 /* ==================
