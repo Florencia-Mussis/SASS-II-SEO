@@ -1,15 +1,4 @@
 /* ------------------------------------------------------------------------- INICIO.HTML ------------------------------------------------------------------------------------------- */
-
-/* ==================
-   RESET
-   ================== */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;   
-}
-
 /* ==================
    ESTRUCTURA GENERAL
    ================== */
@@ -99,23 +88,23 @@ body {
     padding: 4rem 0 0 0;
     color: #000000;
     font-weight: 700;
-    display: grid;
-    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179)); 
+    /* display: grid; */
+    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179));
 }
 
 .primary-container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 1320px;
     text-transform: uppercase;
     width: 95%;
-    display: grid;
+    min-height: 100vh;
+   /*  display: grid;
     grid-template-rows: auto auto;
     grid-row-gap: 4rem;
-    min-height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "primary-title primary-title"
-    "primary-description-button primary-img";
+    "primary-description-button primary-img"; */
 }
 
 .primary-title { 
@@ -162,10 +151,10 @@ body {
 
 .primary-description-button {
     grid-area: primary-description-button;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
 }
 
 .primary-img {
@@ -197,15 +186,15 @@ body {
     margin: 0 auto;
     max-width: 1320px;
     text-transform: uppercase;
-    width: 95%;
-    display: grid;
+     width: 95%;
+     min-height: 100vh;
+    /*display: grid;
     grid-template-rows: auto auto;
-    min-height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 4rem;
     grid-template-areas: 
     "secondary-title secondary-title"
-    "secondary-img secondary-description";
+    "secondary-img secondary-description"; */
 }
 
 .secondary-title { 
@@ -224,7 +213,7 @@ body {
 }
 
 /*** NOMBRE A LAS AREAS ***/
-.secondary-title{
+/* .secondary-title{
     grid-area: secondary-title;
 }
 
@@ -234,7 +223,7 @@ body {
 
 .secondary-img {
     grid-area: secondary-img;
-}
+} */
 
 
 /* ==================
@@ -438,54 +427,6 @@ body {
 }
 
 
-/* ------------------------------------------------------------------------- VIDEOS.HTML ------------------------------------------------------------------------------------------- */
-#video-section {
-    background-color: rgb(255, 159, 173);
-    padding: 4rem 0 0 0;
-    color: #000000;
-    font-weight: 700;   
-}
-
-.video-title {
-    font-size: 2.8rem;
-    font-style: italic;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.video-iframe {
-    height: 441px;
-    margin: 2.5rem auto 0rem auto;
-    width: 65%;
-}
-
-.video-container{
-    padding-bottom: 2rem;
-}
-
-/* ==================
-   MEDIA QUERIES
-   ================== */
-
-@media (max-width: 768px) {
-
-    .video-title {
-        font-size: 1.5rem;
-    }
-  
-}
-    
-    @media (max-width:1024px) {
-    .video-title {
-        font-size: 2rem;
-    }
-        
-    .video-iframe {
-        width: 80%;
-    }
-}
-
-
 /* ------------------------------------------------------------------------- PLANES.HTML ------------------------------------------------------------------------------------------- */
 
 /*** PLAN SECTION ***/
@@ -626,237 +567,5 @@ body {
 
     .card{
         padding: 2rem 0 2rem 0;
-    }
-}
-
-
-/* ------------------------------------------------------------------------- RECETAS.HTML ------------------------------------------------------------------------------------------ */
-#recipes-section {
-    background-color: rgb(255, 159, 173);
-    padding: 4rem 0 0 0;
-    color: #000000;
-    font-weight: 700;   
-}
-
-
-.recipes-tittle {
-    font-size: 3.5rem;
-    font-style: italic;
-    text-align: center;    
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-}
-
-.recipes-container {
-    margin: 0 auto;
-    max-width: 1320px;
-    text-transform: uppercase;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    min-height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "receta1-descripcion receta1 "
-    "receta2 receta2-descripcion "
-    "receta3-descripcion receta3 ";
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-}
-
-.recipe-img {
-    width: 100%;
-}
-
-.recipes-subtittle {
-    text-align: center;
-    margin: auto 10rem 2rem 10rem;
-    background-color: deeppink;
-    border: 1px solid deeppink;
-    border-radius: 10px;
-}
-
-.recipe {
-    margin-bottom: 1rem;
-}
-
-.list {
-    margin-bottom: 2rem;
-    list-style-position: inside;
-}
-
-.steps {
-    list-style-position: inside;
-}
-
-.receta3 {
-    margin-bottom: 3rem;
-}
-
-/*** NOMBRE A LAS AREAS ***/
-.receta1 {
-    grid-area: receta1;
-}
-
-.receta1-descripcion {
-    grid-area: receta1-descripcion;
-}
-
-.receta2 {
-    grid-area: receta2;
-}
-
-.receta2-descripcion {
-    grid-area: receta2-descripcion;
-}
-
-.receta3 {
-    grid-area: receta3;
-}
-
-.receta3-descripcion {
-    grid-area: receta3-descripcion;
-}
-
-/* ==================
-   MEDIA QUERIES
-   ================== */
-
-@media (max-width: 768px) {
-
-    .recipes-container {
-        display: grid;
-        grid-template-rows: auto auto auto auto auto auto;
-        min-height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "receta1"
-        "receta1-descripcion" 
-        "receta2" 
-        "receta2-descripcion"
-        "receta3"
-        "receta3-descripcion";
-        grid-row-gap: 25px;
-    }
-
-    .recipes-tittle {
-        font-size: 1.5rem;
-    } 
-
-    .receta3-descripcion{
-        margin-bottom: 3rem;
-    }
-
-    .receta3 {
-        margin-bottom: 0rem;
-    }
-}
-
-@media (max-width:1024px) {
-    .recipes-tittle {
-        font-size: 2rem;
-    } 
-
-}
-
-
-/* ------------------------------------------------------------------------- CONTACTO.HTML ----------------------------------------------------------------------------------------- */
-
-#contact-section {
-    background-color: white;
-    padding: 3rem 0 0 0;
-}
-
-.form-text-tittle {
-    font-size: 2.5rem;
-    font-style: italic;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.form {
-    background-color: lightpink;
-    border:1px solid lightpink;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    margin: 2rem auto 4rem auto;
-    padding-top: 1.5rem;
-    width: 50%;
-}
-
-.form-container {
-    margin: auto;
-    width: 60%;
-}
-
-.field {
-    margin-top: 1.5rem;
-}
-
-.text-field {
-    border:1px solid #000000;
-    border-radius: 5px;
-    height: 30px;
-    width: 100%;
-    transition: all 1s;
-}
-
-.text-field:hover{
-    transform: scale(1.04);
-    border: 3px solid deeppink;
-}
-
-.mensaje-text-field {
-    border:1px solid #000000;
-    border-radius: 5px;
-    height: 140px;
-    width: 100%;
-    transition: all 1s;
-}
-
-.mensaje-text-field:hover{
-    transform: scale(1.04);
-    border: 3px solid deeppink;
-}
-
-.submit {
-    background-color: #000000;
-	border:1px solid #000000;
-	border-radius:5px;
-    color: lightpink;
-    display:block;
-    font-size: 1rem;
-    padding: 8px;
-    width: 70%;
-    margin: 1rem auto;
-    transition: all 1s;
-}
-
-.submit:hover {
-    color: deeppink;
-}
-
-/* ==================
-   MEDIA QUERIES
-   ================== */
-
-@media (max-width: 768px) {
-
-    .form {
-        width: 90%;
-    }
-
-    .form-text-tittle {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width:1024px) {
-
-    .form {
-        width: 70%;
-    }
-
-    .form-text-tittle {
-        font-size: 2rem;
     }
 }
