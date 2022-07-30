@@ -1,81 +1,19 @@
 /* ------------------------------------------------------------------------- INICIO.HTML ------------------------------------------------------------------------------------------- */
 /* ==================
-   ESTRUCTURA GENERAL
-   ================== */
-
-body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-}
-
-/* ==================
    HEADER
    ================== */
 
 /*** MENU NAVEGACION ***/
 .menu-container {
-    margin: 0 auto;
+    margin: 0 auto; 
     max-width: 1320px;
     text-transform: uppercase;
-    width: 95%;
     background-color: white;
-    position: sticky;
-    top: 0px;
     z-index: 2;
-    height: 10vmin;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+} 
 
-.nav-toggle {
-    visibility: hidden;
-}
-
-.hamburger { 
-    visibility: hidden;
-}
-  
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    display: block;
-    margin: 0 auto;
-    height: 3px;
-    background: black;
-}
-  
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    width: 100%;
-}
-  
-.hamburger::before {
-    transform: translateY(-6px);
-}
-  
-.hamburger::after {
-    transform: translateY(3px);
-}
-
-.nav__bar {
-    display: flex;
-    list-style: none;
-}
-
-.nav_item {
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-.nav__link {
-    color: deeppink;
-    text-decoration: none;  
-}
-
-.nav__link:hover {
-  opacity: 60%;
+.nav-item {
+    font-size: 1.3rem;
 }
 
 /* ==================
@@ -84,81 +22,21 @@ body {
 
 /*** PRIMARY SECTION ***/
 #primary-section {
-    background-color: lightpink;
-    padding: 4rem 0 0 0;
     color: #000000;
-    font-weight: 700;
-    /* display: grid; */
-    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179));
+    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179));  
 }
 
 .primary-container {
-    /* margin: 0 auto; */
+    margin: 0 auto;
     max-width: 1320px;
     text-transform: uppercase;
-    width: 95%;
-    min-height: 100vh;
-   /*  display: grid;
-    grid-template-rows: auto auto;
-    grid-row-gap: 4rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "primary-title primary-title"
-    "primary-description-button primary-img"; */
-}
-
-.primary-title { 
-    font-size: 4rem;
 }
 
 .primary-description {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.button {
-    background-color: #000000;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    border: 1px solid #000000;
-    border-radius: 1rem;
-    width: 60%;
-    margin-bottom: 12rem;
-}
-
-.button-link {
-    color: lightpink;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 1s ease;
-}
-
-.button-link:hover {
-    font-size: 1.5rem;
-    color: deeppink;
+    font-size: 2.5rem; 
 }
 
 .primary-img {
-    max-width: 100%; 
-}
-
-/*** NOMBRE A LAS AREAS ***/
-.primary-title{
-    grid-area: primary-title;
-}
-
-.primary-description-button {
-    grid-area: primary-description-button;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
-}
-
-.primary-img {
-    grid-area: primary-img;
     animation: from-right 1.2s ease;
 }
 
@@ -174,312 +52,49 @@ body {
 
 /*** SECONDARY SECTION ***/
 #secondary-section {
-    background-color: #242121;
-    padding: 4rem 0 0 0;
     color: lightpink;
-    font-weight: 700;
-    display: grid;
     background-image: linear-gradient(#000000, #1f1b1b);
 }
 
 .secondary-container {
-    margin: 0 auto;
     max-width: 1320px;
     text-transform: uppercase;
-     width: 95%;
-     min-height: 100vh;
-    /*display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 4rem;
-    grid-template-areas: 
-    "secondary-title secondary-title"
-    "secondary-img secondary-description"; */
+    margin: 0 auto;
 }
-
-.secondary-title { 
-    font-size: 4rem;
-    text-align: center;
-}
-
-.secondary-img {
-    max-width: 70%;
-    margin: auto;
-}
-
-.secondary-description {
-    font-size: 2rem;
-    text-align: left;
-}
-
-/*** NOMBRE A LAS AREAS ***/
-/* .secondary-title{
-    grid-area: secondary-title;
-}
-
-.secondary-description {
-    grid-area: secondary-description;
-}
-
-.secondary-img {
-    grid-area: secondary-img;
-} */
-
 
 /* ==================
    FOOTER
    ================== */
 
-.footer-container {
-    background-color: rgb(255, 53, 161);
-    color: #000000;
-    font-weight: 700; 
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "footer-title"
-    "footer-icons"
-    "footer-coopyright";
-    grid-row-gap: 1.5rem;
-    text-align: center;
-    padding: 1rem 0 1rem 0;
-}
-
-.icon-link {
-    color: #000000;
-}
-
-.coopyright {
-    text-transform: capitalize;
-} 
-
 .coopyright-link {
-    color:violet;
-    font-weight: 600;
+    color:#ffffff;
     text-decoration: none;  
 }
 
-/*** NOMBRE A LAS AREAS ***/
-.footer-title {
-    grid-area: footer-title;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+#footer {
+    height:10vh;
 }
-
-.footer-icons {
-    grid-area: footer-icons;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 3rem;
-    width: 45%;
-    margin: auto;
-}
-
-.footer-coopyright{
-    grid-area: footer-coopyright;
-}
-
-/* ==================
-   MEDIA QUERIES
-   ================== */
-
-/*** INICIO ***/
-
-@media (max-width: 768px) {
-    
-     /*CONTENEDOR PRINCIPAL DEL MENU (Contiene: Logo + Hamburguesa + Menu navegacion)*/
-    .menu-container {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-     /*HAMBURGUESA*/
-    .nav-toggle {
-        position: absolute;
-        visibility: visible;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        width: 3rem;
-        height: 3rem;
-        padding: 0em;
-        border-radius: 0.25rem;
-        background-color: transparent;
-        color: rgba(255, 255, 255, 0.55);
-        transition: opacity 250ms ease;
-        left: 0;
-    }
-
-    .hamburger {
-        visibility: visible;
-        width: 50%;
-        position: absolute;
-        cursor: pointer;
-    }
-      
-     /*MENU NAVEGACION*/
-    .nav {
-        display: none;
-    }
-
-     /*LISTA DESORDENADA*/
-    .nav__bar{
-        flex-direction: column;
-        align-items: center;
-    }
-
-     /*ITEM*/
-    .nav__item {
-        margin: 0 0 0 1.5rem;
-        width: 600px;
-    }
-
-     /*CLASE QUE ALTERNA AL CLICKEAR HAMBURGUESA (Desde JavaScript cambia .nav por .nav--visible)*/
-    .nav--visible {
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-    }
- 
-     /*SECCIONES*/ 
-    .primary-container{
-        display: grid;
-        grid-template-rows: 0.2fr 0.8fr 1fr;
-        min-height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "primary-title"
-        "primary-description-button"
-        "primary-img";
-        grid-row-gap: 1.5rem;
-    }
-    
-    .secondary-container {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        min-height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "secondary-title"
-        "secondary-description"
-        "secondary-img";
-        grid-row-gap: 2.5rem;
-    }
-
-    .primary-title { 
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-    .primary-description {
-        font-size: 1rem;
-    }
-
-    .secondary-title { 
-        font-size: 2.5rem;
-    }
-    
-    .secondary-description {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .secondary-img {
-        width: 100%;
-        margin: auto;
-    }
-    
-}
-
-@media (max-width:1024px) {
-
-    .nav__link {
-        font-size: 1.2rem;
-    }
-    
-    .primary-tittle {
-        font-size: 3.5rem;
-    }
-
-    .primary-description {
-        font-size: 2rem;
-    }
-
-    .button {
-        padding: 1rem 2rem 1rem 2rem;
-        margin: 2rem 0rem;
-        width: 65%;
-    }
-
-    .button-link {
-        font-size: 1.5rem;
-    }
-
-    .secondary-tittle {
-        font-size: 3.5rem;
-    }
-
-    .secondary-description {
-        font-size: 1.5rem;
-    }
-}
-
 
 /* ------------------------------------------------------------------------- PLANES.HTML ------------------------------------------------------------------------------------------- */
 
-/*** PLAN SECTION ***/
-#plan-section {
-    background-color: white;
-    padding: 3rem 0 0 0;
-}
-
 .plan-title {
-    font-size: 1.5rem;
     font-style:italic;
     text-transform: uppercase;
-    text-align: center;
 }
 
-/*** PLAN CONTAINER***/
-.plan-cards {
-    width: 95%;
+.card-body {
     text-transform: uppercase;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
-    "card1" "card2" "card3";
-    grid-column-gap: 5rem;
-    text-align: center;
-    margin: auto;
-    padding-top: 5rem;
 }
 
 .card {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 3rem;
-    border:1px solid lightpink;
     border-radius: 20px;
-    list-style-position: inside;
-    background-color: lightpink;
-    padding: 2rem 0 2rem 0;  
+    list-style-position: inside; 
     cursor: pointer;
     transition: all 1s ease;
 }
 
 .card:hover{
     transform: scale(1.10);
-}
-
-.card-tittle {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
 }
 
 .importe {
@@ -489,83 +104,11 @@ body {
 
 .card-description {
     font-size: 1.1rem;
-    margin-top: 1rem;
-}
-
-.suscription-button {
-    background-color: #000000;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    margin-top: 2rem;
-    padding: 1rem 2rem 1rem 2rem;
 }
 
 .suscription-link {
-    color: lightpink;
-    font-size: 1.2rem;
-    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 1s ease;
-}
-
-.suscription-link:hover {
-    color: deeppink;
-}
-
-
-/* ==================
-   MEDIA QUERIES
-   ================== */
-
-@media (max-width: 768px) {
-
-    .plan-cards {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: auto;
-        grid-template-areas: 
-        "card1" 
-        "card2" 
-        "card3";
-        grid-row-gap: 3rem;
-        margin: auto;
-        padding-bottom: 3rem; 
-    }
-
-    .plan-title {
-        font-size: 1rem;
-    }
-
-    .card {
-        padding: 2rem 0 2rem 0;
-    }
-
-    .importe {
-        font-size: 2rem;
-    }
-
-    .suscription-button {
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width:1024px) {
-
-    .plan-title {
-        font-size: 1.2rem;
-    }
-
-    .plan-cards {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-    }
-
-    .importe {
-        font-size: 3rem;
-    }
-
-    .card{
-        padding: 2rem 0 2rem 0;
-    }
 }
