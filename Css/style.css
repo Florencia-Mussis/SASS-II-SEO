@@ -1,114 +1,71 @@
-/* ------------------------------------------------------------------------- INICIO.HTML ------------------------------------------------------------------------------------------- */
-/* ==================
-   HEADER
-   ================== */
-
-/*** MENU NAVEGACION ***/
-.menu-container {
-    margin: 0 auto; 
-    max-width: 1320px;
-    text-transform: uppercase;
-    background-color: white;
-    z-index: 2;
-} 
-
-.nav-item {
-    font-size: 1.3rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ==================
-   MAIN
-   ================== */
+.navbar {
+  margin: 0 auto;
+  max-width: 1320px;
+  text-transform: uppercase;
+  background-color: white;
+  z-index: 2;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.navbar .nav-item {
+  font-size: 1.3rem;
+}
+.navbar .nav-item:hover {
+  font-weight: bold;
+}
 
 /*** PRIMARY SECTION ***/
 #primary-section {
-    color: #000000;
-    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179));  
+  color: #000000;
+  background-image: linear-gradient(to right, deeppink, rgb(247, 114, 134), rgb(250, 166, 179));
 }
-
-.primary-container {
-    margin: 0 auto;
-    max-width: 1320px;
-    text-transform: uppercase;
+#primary-section .primary-container {
+  margin: 0 auto;
+  max-width: 1320px;
+  text-transform: uppercase;
 }
-
-.primary-description {
-    font-size: 2.5rem; 
+#primary-section .primary-description {
+  font-size: 2.5rem;
 }
-
-.primary-img {
-    animation: from-right 1.2s ease;
+#primary-section .primary-img {
+  animation: from-right 1.2s ease;
 }
-
 @keyframes from-right {
-    0%{ opacity: 0;
-        transform: translateX(80px);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }   
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 /*** SECONDARY SECTION ***/
 #secondary-section {
-    color: lightpink;
-    background-image: linear-gradient(#000000, #1f1b1b);
+  color: lightpink;
+  background-image: linear-gradient(#000000, #1f1b1b);
 }
-
-.secondary-container {
-    max-width: 1320px;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-/* ==================
-   FOOTER
-   ================== */
-
-.coopyright-link {
-    color:#ffffff;
-    text-decoration: none;  
+#secondary-section .secondary-container {
+  max-width: 1320px;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 #footer {
-    height:10vh;
+  height: 10vh;
+}
+#footer .coopyright-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-/* ------------------------------------------------------------------------- PLANES.HTML ------------------------------------------------------------------------------------------- */
-
-.plan-title {
-    font-style:italic;
-    text-transform: uppercase;
-}
-
-.card-body {
-    text-transform: uppercase;
-}
-
-.card {
-    border-radius: 20px;
-    list-style-position: inside; 
-    cursor: pointer;
-    transition: all 1s ease;
-}
-
-.card:hover{
-    transform: scale(1.10);
-}
-
-.importe {
-    font-size: 4rem;
-    font-style: italic;
-}
-
-.card-description {
-    font-size: 1.1rem;
-}
-
-.suscription-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 1s ease;
-}
+/*# sourceMappingURL=style.css.map */

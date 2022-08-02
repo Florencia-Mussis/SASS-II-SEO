@@ -1,0 +1,20 @@
+{
+  "name": "desafio-bootstrap---mussis-florencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss Css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Florencia-Mussis/Boostrap-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Florencia-Mussis/Boostrap-version/issues"
+  },
+  "homepage": "https://github.com/Florencia-Mussis/Boostrap-version#readme"
+}
