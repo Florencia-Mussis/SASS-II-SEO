@@ -1,0 +1,50 @@
+
+/*** PLANES SECTION ***/
+.plan-title {
+    font-style:italic;
+    text-transform: uppercase;
+}
+
+.card {
+    border-radius: 20px;
+    border:solid; 
+    list-style-position: inside; 
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+        transform: scale(1.10);
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }     
+
+    .card-body {
+        text-transform: uppercase;
+    }
+
+    .card-subtitle {
+        font-size: 4rem;
+        font-style: italic;
+    }
+
+    .card-description {
+        font-size: 1.1rem;
+    }
+
+    .suscription-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+}
+
+
+
+
+
+
+

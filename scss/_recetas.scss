@@ -1,0 +1,37 @@
+/*** RECETAS SECTION ***/
+
+#recipes-section {
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+
+    .recipes-tittle {
+        font-style: italic;   
+        text-transform: uppercase;
+    }
+
+    .recipes-subtittle {
+        background-color: rgb(248, 63, 162);
+        border: 1px solid deeppink;
+        border-radius: 10px;
+    }
+
+    .list {
+        list-style-position: inside;
+    }
+
+    .steps {
+        list-style-position: inside;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

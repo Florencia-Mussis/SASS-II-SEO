@@ -5,8 +5,6 @@
 }
 
 .navbar {
-  margin: 0 auto;
-  max-width: 1320px;
   text-transform: uppercase;
   background-color: white;
   z-index: 2;
@@ -20,6 +18,14 @@
 }
 .navbar .nav-item:hover {
   font-weight: bold;
+}
+
+#footer {
+  height: 10vh;
+}
+#footer .coopyright-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*** PRIMARY SECTION ***/
@@ -60,12 +66,81 @@
   margin: 0 auto;
 }
 
-#footer {
-  height: 10vh;
+/*** VIDEO SECTION ***/
+.video-title {
+  text-transform: uppercase;
+  font-style: italic;
 }
-#footer .coopyright-link {
-  color: #ffffff;
+
+.video-section {
+  background-color: lightpink;
+}
+
+/*** PLANES SECTION ***/
+.plan-title {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.card {
+  border-radius: 20px;
+  border: solid;
+  list-style-position: inside;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card .card-body {
+  text-transform: uppercase;
+}
+.card .card-subtitle {
+  font-size: 4rem;
+  font-style: italic;
+}
+.card .card-description {
+  font-size: 1.1rem;
+}
+.card .suscription-link {
   text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+/*** RECETAS SECTION ***/
+#recipes-section {
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+#recipes-section .recipes-tittle {
+  font-style: italic;
+  text-transform: uppercase;
+}
+#recipes-section .recipes-subtittle {
+  background-color: rgb(248, 63, 162);
+  border: 1px solid deeppink;
+  border-radius: 10px;
+}
+#recipes-section .list {
+  list-style-position: inside;
+}
+#recipes-section .steps {
+  list-style-position: inside;
+}
+
+/*** CONTACTO SECTION ***/
+.title {
+  text-transform: uppercase;
+}
+
+.form-group {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
