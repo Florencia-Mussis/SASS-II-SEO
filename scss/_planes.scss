@@ -34,6 +34,10 @@
         font-size: 1.1rem;
     }
 
+    .card-button1 {
+        background-color: map-get ($buttons, button1);
+    }
+
     .suscription-link {
         text-decoration: none;
         text-transform: uppercase;
@@ -41,6 +45,9 @@
         transition: all 1s ease;
     }
 }
+
+
+
 
 
 

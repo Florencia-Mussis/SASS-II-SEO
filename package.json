@@ -1,5 +1,5 @@
 {
-  "name": "proyecto-final-2.git---mussis-florencia",
+  "name": "SASS-II-SEO.git---mussis-florencia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Florencia-Mussis/Proyecto-final-2.git"
+    "url": "git+https://github.com/Florencia-Mussis/SASS-II-SEO.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Florencia-Mussis/Proyecto-final-2/issues"
+    "url": "https://github.com/Florencia-Mussis/SASS-II-SEO/issues"
   },
-  "homepage": "https://github.com/Florencia-Mussis/Proyecto-final-2#readme"
+  "homepage": "https://github.com/Florencia-Mussis/SASS-II-SEO#readme"
 }

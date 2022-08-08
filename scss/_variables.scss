@@ -1,5 +1,15 @@
 $primary-color: #000000;
 
-$secondary-color: lightpink;
+$secondary-color: rgb(238, 182, 255);
 
+$buttons: (
+    "button1": green,
+    "button2": orange, 
+    "button3": blue,
+);
 
+/* @each $button, $color in $buttons {
+    .card-button--#{$button}{
+        background-color: $color;
+    }
+} */
