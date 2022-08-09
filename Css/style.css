@@ -1,1 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.card-background1 {
+  background-color: green;
+}
+
+.card-background2 {
+  background-color: orange;
+}
+
+.card-background3 {
+  background-color: blue;
+}
+
+#primary-section {
+  background-image: linear-gradient(to right, rgb(122, 20, 255), rgb(169, 95, 230), rgb(217, 126, 240));
+  text-align: center;
+  font-size: 1rem;
+}
+
+.navbar {
+  text-transform: uppercase;
+  background-color: white;
+  z-index: 2;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.navbar .nav-item {
+  font-size: 1.3rem;
+}
+.navbar .nav-item:hover {
+  font-weight: bold;
+}
+
+#footer {
+  height: 10vh;
+}
+#footer .coopyright-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*** PRIMARY SECTION ***/
+#primary-section {
+  color: #000000;
+}
+#primary-section .primary-container {
+  text-transform: uppercase;
+}
+#primary-section .primary-description {
+  font-size: 2.5rem;
+}
+#primary-section .primary-img {
+  animation: from-right 1.2s ease;
+}
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.subrayado, #secondary-section .secondary-title, #primary-section .primary-title {
+  text-decoration: underline;
+}
+
+/*** SECONDARY SECTION ***/
+#secondary-section {
+  color: rgb(238, 182, 255);
+  background-image: linear-gradient(#000000, #1f1b1b);
+}
+#secondary-section .secondary-container {
+  text-transform: uppercase;
+}
+/*** VIDEO SECTION ***/
+.video-title {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/*** PLANES SECTION ***/
+.plan-title {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.card {
+  list-style-position: inside;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card .card-body {
+  border: solid;
+  border-radius: 20px;
+  border-color: #000000;
+  text-transform: uppercase;
+}
+.card .card-subtitle {
+  font-size: 4rem;
+  font-style: italic;
+}
+.card .card-description {
+  font-size: 1.1rem;
+}
+.card .suscription-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+/*** RECETAS SECTION ***/
+#recipes-section {
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+#recipes-section .recipes-tittle {
+  font-style: italic;
+  text-transform: uppercase;
+}
+#recipes-section .recipes-subtittle {
+  border: solid;
+  border-radius: 20px;
+  border-color: deeppink;
+  background-color: rgb(248, 63, 162);
+}
+#recipes-section .list {
+  list-style-position: inside;
+}
+#recipes-section .steps {
+  list-style-position: inside;
+}
+
+/*** CONTACTO SECTION ***/
+.title {
+  text-transform: uppercase;
+}
+
+.form-group {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
