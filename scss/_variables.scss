@@ -2,14 +2,27 @@ $primary-color: #000000;
 
 $secondary-color: rgb(238, 182, 255);
 
-$buttons: (
-    "button1": green,
-    "button2": orange, 
-    "button3": blue,
+$cards: (
+    "1": green,
+    "2": orange, 
+    "3": blue,
 );
 
-/* @each $button, $color in $buttons {
-    .card-button--#{$button}{
+@each $card, $color in $cards {
+    .card-background#{$card}{
         background-color: $color;
     }
-} */
+}
+
+
+$estilos: (
+    "color": linear-gradient(to right, rgb(122, 20, 255),rgb(169, 95, 230), rgb(217, 126, 240)),
+    "alineacion": center,
+    "tamaño": 1rem,
+);
+
+#primary-section {
+    background-image: map-get($estilos, color);
+    text-align: map-get($estilos, alineacion);
+    font-size:  map-get($estilos, tamaño);
+}

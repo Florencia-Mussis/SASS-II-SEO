@@ -1,10 +1,14 @@
 /*** PRIMARY SECTION ***/
 #primary-section {
     color: $primary-color;
-    background-image: linear-gradient(to right, deeppink,rgb(247, 114, 134), rgb(250, 166, 179));
+    
 
     .primary-container {
         text-transform: uppercase;
+    }
+
+    .primary-title {
+        @extend .subrayado;
     }
 
     .primary-description {
@@ -26,6 +30,10 @@
     }   
 }
 
+.subrayado {
+    text-decoration: underline;
+}
+
 /*** SECONDARY SECTION ***/
 #secondary-section {
     color: $secondary-color;
@@ -33,5 +41,9 @@
 
     .secondary-container {
         text-transform: uppercase;
+    }
+
+    .secondary-title {
+        @extend .subrayado;
     }
 }

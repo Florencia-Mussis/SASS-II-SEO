@@ -6,8 +6,6 @@
 }
 
 .card {
-    border-radius: 20px;
-    border:solid; 
     list-style-position: inside; 
     cursor: pointer;
     transition: all 1s ease;
@@ -22,6 +20,7 @@
     }     
 
     .card-body {
+        @include border(#000000);
         text-transform: uppercase;
     }
 
@@ -32,10 +31,6 @@
 
     .card-description {
         font-size: 1.1rem;
-    }
-
-    .card-button1 {
-        background-color: map-get ($buttons, button1);
     }
 
     .suscription-link {
